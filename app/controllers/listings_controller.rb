@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-  skip_before_action :authorized, only: [:create, :index]
+  skip_before_action :authorized, only: [:create, :index, :destroy]
 
   def index
     @listings = Listing.all
@@ -11,10 +11,6 @@ class ListingsController < ApplicationController
     render json: @listing
   end
 
-  # def rented
-  #   @listing = Listing.find(params[:id])
-  #   render json:
-  # end
 
   def create
     @listing = Listing.create(listing_params)
@@ -22,8 +18,8 @@ class ListingsController < ApplicationController
   end
 
   def destroy
-    @listing = Listing.find(params[:id])
-    render json: @listing.destroy
+    Listing.delete(params[:id])
+     render json: {success:"was deleted"}
   end
 
   private

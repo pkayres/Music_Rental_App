@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :listings, only: [:index,:create]
+  resources :listings, only: [:index,:create,:destroy]
     post '/listings/:id', to: 'listings#rented'
 
   resources :ratings
