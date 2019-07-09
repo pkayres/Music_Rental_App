@@ -7,6 +7,7 @@ class RatingsController < ApplicationController
   end
 
   def create
+
     @rating = Rating.create(rating_params)
     render json: @rating
   end
