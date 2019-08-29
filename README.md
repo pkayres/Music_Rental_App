@@ -1,24 +1,18 @@
-# README
+# Sound Swap
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This web app allows musicians to rent and lease musical instruments. Users can then rate and review their overall experience. 
 
-Things you may want to cover:
 
-* Ruby version
+## Getting started
 
-* System dependencies
+This client-side project runs with a React front-end download here: 
+https://github.com/pkayres/sound-swap-client
 
-* Configuration
 
-* Database creation
+### This site was built with: 
+- [Ruby on Rails](https://rubyonrails.org/) The JavaScript library used
 
-* Database initialization
+### Authors: 
 
-* How to run the test suite
+Pete Ayres - [pkayres](https://github.com/pkayres)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
